@@ -1,0 +1,78 @@
+<html>
+    <head>
+    <title>
+        Sleep Soundboard Website
+    </title>
+
+    <style>
+.row{
+    width:720px;
+    margin: 10px auto 10px auto ;
+}
+.image-container {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 20px,
+}
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+
+    </head>
+
+<style>
+    body {
+  background-image: url("img/pexels.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+
+    <div class="row">
+        <div class="image-container"><img id="icon1" src="img/IconsArtboard 1@2x.png" onmouseover="this.src='darkimg/iconsclicked1.png';" onmouseout="this.src='img/IconsArtboard 1@2x.png';" width="200" height="200"/></div>
+        <div class="image-container"><img id="icon2" src="img/IconsArtboard 2@2x.png" onmouseover="this.src='darkimg/iconsclicked2.png';" onmouseout="this.src='img/IconsArtboard 2@2x.png';" width="200" height="200"/></div>
+        <div class="image-container"><img id="icon3" src="img/IconsArtboard 3@2x.png" onmouseover="this.src='darkimg/iconsclicked3.png';" onmouseout="this.src='img/IconsArtboard 3@2x.png';" width="200" height="200"/></div>
+    </div>
+
+    <div class="row">
+        <div class="image-container"><img id="icon4" src="img/IconsArtboard 4@2x.png" onmouseover="this.src='darkimg/iconsclicked4.png';" onmouseout="this.src='img/IconsArtboard 4@2x.png';" width="200" height="200"/></div>
+        <div class="image-container"><img id="icon5" src="img/IconsArtboard 5@2x.png" onmouseover="this.src='darkimg/iconsclicked5.png';" onmouseout="this.src='img/IconsArtboard 5@2x.png';" width="200" height="200"/></div>
+        <div class="image-container"><img id="icon6" src="img/IconsArtboard 6@2x.png" onmouseover="this.src='darkimg/iconsclicked6.png';" onmouseout="this.src='img/IconsArtboard 6@2x.png';" width="200" height="200"/></div>
+    </div>
+
+    <div class="row">
+        <div class="image-container"><img id="icon7" src="img/IconsArtboard 7@2x.png" onmouseover="this.src='darkimg/iconsclicked7.png';" onmouseout="this.src='img/IconsArtboard 7@2x.png';" width="200" height="200"/></div>
+        <div class="image-container"><img id="icon8" src="img/IconsArtboard 8@2x.png" onmouseover="this.src='darkimg/iconsclicked8.png';" onmouseout="this.src='img/IconsArtboard 8@2x.png';" width="200" height="200"/></div>
+        <div class="image-container"><img id="icon9" src="img/IconsArtboard 9@2x.png" onmouseover="this.src='darkimg/iconsclicked9.png';" onmouseout="this.src='img/IconsArtboard 9@2x.png';" width="200" height="200"/></div>
+    </div>
+
+<script>
+    var sound1 = new buzz.sound("sounds/rain.mp3");
+    var sound2 = new buzz.sound("sounds/river.mp3");
+    var sound3 = new buzz.sound("sounds/waves.mp3");
+    var sound4 = new buzz.sound("sounds/fan_noise.mp3");
+    var sound5 = new buzz.sound("sounds/white_noise.mp3");
+    var sound6 = new buzz.sound("sounds/breeze.mp3");
+    var sound7 = new buzz.sound("sounds/rainforest.mp3");
+    var sound8 = new buzz.sound("sounds/birds_singing.mp3");
+    var sound9 = new buzz.sound("sounds/jungle.mp3");
+
+
+    window.onload = function() {
+        document.getElementById('icon1').addEventListener('click', function () {sound1.play();}); 
+        document.getElementById('icon2').addEventListener('click', function () {sound2.play();});
+        document.getElementById('icon3').addEventListener('click', function () {sound3.play();});
+        document.getElementById('icon4').addEventListener('click', function () {sound4.play();});
+        document.getElementById('icon5').addEventListener('click', function () {sound5.play();});
+        document.getElementById('icon6').addEventListener('click', function () {sound6.play();});
+        document.getElementById('icon7').addEventListener('click', function () {sound7.play();});
+        document.getElementById('icon8').addEventListener('click', function () {sound8.play();});
+        document.getElementById('icon9').addEventListener('click', function () {sound9.play();});
+    };
+</script>
+
+
+</body>
+
+</html>
